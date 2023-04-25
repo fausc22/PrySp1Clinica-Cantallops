@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrySp1Clinica-Cantallops", "PrySp1Clinica-Cantallops.csproj", "{69760778-AB75-4B9F-B72C-A88E310B86A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69760778-AB75-4B9F-B72C-A88E310B86A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69760778-AB75-4B9F-B72C-A88E310B86A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69760778-AB75-4B9F-B72C-A88E310B86A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69760778-AB75-4B9F-B72C-A88E310B86A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F92B0B3-7752-4B30-B845-4AD8C3BEDD3D}
+	EndGlobalSection
+EndGlobal
