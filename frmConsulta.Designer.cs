@@ -123,6 +123,7 @@
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnMedico
             // 
@@ -144,7 +145,6 @@
             this.lblNroEspecialidad.Size = new System.Drawing.Size(35, 13);
             this.lblNroEspecialidad.TabIndex = 7;
             this.lblNroEspecialidad.Text = "label2";
-            this.lblNroEspecialidad.Visible = false;
             // 
             // frmConsulta
             // 

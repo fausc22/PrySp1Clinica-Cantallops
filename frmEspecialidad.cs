@@ -74,11 +74,14 @@ namespace PrySp1Clinica_Cantallops
                 especialidades.NombreArchivo = PATH_ARCHIVO_E;
                 especialidades.GrabarEspecialidad(especialidad);
                 Inicializar();
+                MessageBox.Show("Especialidad registrada con éxito", "", MessageBoxButtons.OK);
             }
             else
             {
                 MessageBox.Show("Datos incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            
         }
 
 
@@ -109,8 +112,10 @@ namespace PrySp1Clinica_Cantallops
         private void btnSalir_Click(object sender, EventArgs e)
         {
 
-
-            Close();
+            
+            this.Hide();
+            frmConsulta frm = new frmConsulta();
+            frm.ShowDialog();
         }
     }
 }

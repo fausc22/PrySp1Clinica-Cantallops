@@ -80,6 +80,7 @@ namespace PrySp1Clinica_Cantallops
                 medicos.NombreArchivo = PATH_ARCHIVO_M;
                 medicos.GrabarMedico(nuevomedico);
                 Inicializar();
+                MessageBox.Show("Medico registrado con éxito", "", MessageBoxButtons.OK);
             }
             else
             {
@@ -114,7 +115,9 @@ namespace PrySp1Clinica_Cantallops
         private void btnSalir_Click(object sender, EventArgs e)
         {
 
-            Close();
+            this.Hide();
+            frmConsulta frm = new frmConsulta();
+            frm.ShowDialog();
         }
     }
 }

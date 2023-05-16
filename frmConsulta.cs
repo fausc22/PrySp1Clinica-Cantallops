@@ -51,7 +51,7 @@ namespace PrySp1Clinica_Cantallops
                 cmbEspecialidad.Items.Add(especial.nombre);
                 
                 //ciclo FOR para escribir el nro de especialidad y asi entrelazarlo con el medico usando una LABEL
-                for (int i = 1; i < especialidades.Count; i++)
+                for (int i = 0; i < especialidades.Count; i++)
                 {
                     NroEspecialidad[i] = especial.especialidad;
                 }
@@ -83,6 +83,12 @@ namespace PrySp1Clinica_Cantallops
                 {
                     dgvInfo.Rows.Add(medicoo.matricula, medicoo.nombre);
                 }
+                
+            }
+
+            if (dgvInfo.Rows.Count == 0)
+            {
+                MessageBox.Show("No hay médicos actualmente en esta categoria.", "ADVERTENCIA", MessageBoxButtons.OK);
             }
 
             cmbEspecialidad.SelectedIndex = -1;
@@ -95,11 +101,12 @@ namespace PrySp1Clinica_Cantallops
 
         private void cmbEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
             
            if (cmbEspecialidad.SelectedIndex == 0)
             {
                 lblNroEspecialidad.Text = NroEspecialidad[0].ToString();
+                
             }
             else
             {
@@ -136,7 +143,7 @@ namespace PrySp1Clinica_Cantallops
         //procedimiento que abre el formualrio para agregar una especialidad
         private void btnEspecial_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
             frmEspecialidad frm = new frmEspecialidad();
             frm.ShowDialog();
             
@@ -145,10 +152,15 @@ namespace PrySp1Clinica_Cantallops
         //procedimiento que abre el formulario para agregar un nuevo medico
         private void btnMedico_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
             frmMedico frm = new frmMedico();
             frm.ShowDialog();
             
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
